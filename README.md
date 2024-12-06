@@ -20,47 +20,44 @@ V tomto úkolu budete instalovat Zabbix server. Vaším cílem je nainstalovat Z
 - Pokud použijete provisioning nástroje (např. Bash, Ansible), přidejte je do repozitáře.
 
 ## 2. Instalace Zabbixu 7.0 LTS
-
 ### Vyberte jednu z možností:
-- Manuální instalace (max. 10 bodů)
-    Zabbix server ručně:
-        Nainstalujte a nastavte webový server (např. Apache/Nginx).
-        Nainstalujte databázi (např. MySQL/PostgreSQL) případně i s TimescaleDB
-        Stáhněte a nainstalujte Zabbix server a jeho komponenty.
-        Nakonfigurujte přístup na webové rozhraní.
+#### Manuální instalace (max. 10 bodů)
 
-    Zabbix agent2 ručně:
-        Nainstalujte Zabbix agent2.
-        Připojte agenta k serveru.
+- Nainstalujte a nastavte webový server (např. Apache/Nginx)
+- Nainstalujte databázi (např. MySQL/PostgreSQL) případně i s TimescaleDB
+- Stáhněte a nainstalujte Zabbix server a jeho komponenty
+- Nakonfigurujte přístup na webové rozhraní
 
-    Zaznamenejte všechny kroky instalace do dokumentace formou README.md
-    Ověřte, že agent komunikuje se serverem a data jsou viditelná v Zabbix webovém rozhraní.
+- Nainstalujte Zabbix agent2.
+- Připojte agenta k serveru.
 
-- Automatizovaná instalace (max. 30 bodů)
+Zaznamenejte všechny kroky instalace do dokumentace formou README.md. Ověřte, že agent komunikuje se serverem a data jsou viditelná v Zabbix webovém rozhraní.
 
-    Použijte provisioning nástroj (např. Ansible, Bash) pro automatizaci:
-        Instalace a konfigurace Zabbix serveru.
-        Instalace a konfigurace Zabbix agenta.
+#### Automatizovaná instalace (max. 30 bodů)
 
-    Skripty přidejte do repozitáře a ověřte jejich funkčnost.
-    Zaznamenejte všechny kroky instalace do dokumentace formou README.md
-    Ověřte, že agent komunikuje se serverem a data jsou viditelná v Zabbix webovém rozhraní.
+- Použijte provisioning nástroj (např. Ansible, Bash) pro automatizaci:
+- Instalace a konfigurace Zabbix serveru.
+- Instalace a konfigurace Zabbix agenta.
+
+- Skripty přidejte do repozitáře a ověřte jejich funkčnost.
+
+Zaznamenejte všechny kroky instalace do dokumentace formou README.md Ověřte, že agent komunikuje se serverem a data jsou viditelná v Zabbix webovém rozhraní.
 
 ## 3. Monitoring
-    Monitorujte SSL certifikát školního webu:
-        Importujte Hosta
-        Zkontrolujte, že se Certifikát https://sposdk.cz monitoruje (Latest data) případně screen obrazovky
+### Monitorujte SSL certifikát školního webu
+- Importujte Hosta sposdk.cz
+- Zkontrolujte, že se Certifikát https://sposdk.cz monitoruje (Latest data) případně uložte screen obrazovky
 
 ## 4. Dokumentace
-    V repozitáři vytvořte soubor README.md, kde popíšete:
-        Postup instalace (pro manuální i automatizovanou variantu).
-        Způsob spuštění virtuálních strojů pomocí Vagrantu.
-        Jak ověřit funkčnost Zabbixu.
+### V repozitáři vytvořte soubor README.md, kde popíšete
+- Postup instalace (pro manuální i automatizovanou variantu)
+- Způsob spuštění virtuálních strojů pomocí Vagrantu
+- Jak ověřit funkčnost Zabbixu
 
-    Přiložte snímky obrazovky:
-        Běh Zabbix serveru a agenta (logy, procesy, htop, ps, btop).
-        Webové rozhraní Zabbixu. (Každý bude mít svůj Zabbix podepsaný) - $ZBX_SERVER_NAME v zabbix.conf.php
-        Snímky budou součástí Vašeho repository adresář Images
+### Přiložte snímky obrazovky
+- Běh Zabbix serveru a agenta (logy, procesy, htop, ps, btop).
+- Webové rozhraní Zabbixu. (Každý bude mít svůj Zabbix podepsaný) - $ZBX_SERVER_NAME v zabbix.conf.php
+- Snímky budou součástí Vašeho repository adresář Images
 
 ## 5. Hodnocení
 
@@ -74,6 +71,6 @@ V tomto úkolu budete instalovat Zabbix server. Vaším cílem je nainstalovat Z
 | Dokumentace                   | 5    |
 
 ## 6. Odevzdání
-    Nahrajte svůj projekt do svého GitHub Classroom repozitáře.
-    Zkontrolujte, že vše funguje podle zadání.
-    Odevzdejte link na váš repozitář do Teams.
+- Nahrajte svůj projekt do svého GitHub Classroom repozitáře
+- Zkontrolujte, že vše funguje podle zadání
+- Odevzdejte link na váš repozitář do Teams
