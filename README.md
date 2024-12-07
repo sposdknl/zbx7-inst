@@ -10,7 +10,7 @@ V tomto úkolu budete instalovat Zabbix server. Vaším cílem je nainstalovat Z
 
 ## 1. Příprava projektu
 
-- Zprovozněte si svůj studentský repozitář na GitHub Classroom. Přidejte do repozitáře všechny soubory, které budete potřebovat (např. Vagrantfile, provisioning skripty, dokumentaci).
+- Zprovozněte si svůj studentský repozitář na GitHub Classroom - zabbix01. Přidejte do repozitáře všechny soubory, které budete potřebovat (např. Vagrantfile, provisioning skripty, obrázky, dokumentaci).
 
 ### Příprava prostředí
 
@@ -45,19 +45,19 @@ Zaznamenejte všechny kroky instalace do dokumentace formou README.md Ověřte, 
 
 ## 3. Monitoring
 ### Monitorujte SSL certifikát školního webu
-- Importujte Hosta sposdk.cz
-- Zkontrolujte, že se Certifikát https://sposdk.cz monitoruje (Latest data) případně uložte screen obrazovky
+- Importujte hosta sposdk.cz - sposdk.cz_hosts.yaml
+- Zkontrolujte, že se Certifikát https://sposdk.cz monitoruje (Latest data) uložte screen obrazovky do repo
 
 ## 4. Dokumentace
 ### V repozitáři vytvořte soubor README.md, kde popíšete
 - Postup instalace (pro manuální i automatizovanou variantu)
 - Způsob spuštění virtuálních strojů pomocí Vagrantu
-- Jak ověřit funkčnost Zabbixu
+- Dále pak ověření funkčnosti Zabbixu (procesy, logy)
 
 ### Přiložte snímky obrazovky
 - Běh Zabbix serveru a agenta (logy, procesy, htop, ps, btop).
-- Webové rozhraní Zabbixu. (Každý bude mít svůj Zabbix podepsaný) - $ZBX_SERVER_NAME v zabbix.conf.php
-- Snímky budou součástí Vašeho repository adresář Images
+- Webové rozhraní Zabbixu. (Každý bude mít svůj Zabbix podepsaný) - proměnná php - $ZBX_SERVER_NAME v zabbix.conf.php
+- Snímky obrazovek budou součástí Vašeho repository adresář ./Images
 
 ## 5. Hodnocení
 
@@ -70,7 +70,19 @@ Zaznamenejte všechny kroky instalace do dokumentace formou README.md Ověřte, 
 | Monitoring SSL certifikátu    | 4    |
 | Dokumentace                   | 5    |
 
-## 6. Odevzdání
-- Nahrajte svůj projekt do svého GitHub Classroom repozitáře
-- Zkontrolujte, že vše funguje podle zadání
-- Odevzdejte link na váš repozitář do Teams
+## 6. Důležité soubory
+
+| File config                   | Komponenta      |
+|-------------------------------|-----------------|
+| Vagrantfile                   | Vagrant         |
+| zabbix_server.conf            | Zabbix server   |
+| zabbix_agent2.conf            | Zabbix agent    |
+| zabbix.conf.php               | Zabbix frontend |
+| apache.conf                   | Apache          |
+| mysql.ini                     | MariaDB         |
+
+
+## 7. Odevzdání
+- Nahrajte svůj projekt do svého GitHub Classroom repozitáře, nezapomenout .gitignore
+- Zkontrolujte, že vše funguje podle zadání - http://localhost:8080 nebo http://localhost:8080/zabbix/ (číslo portu je na Vás)
+- Odevzdejte link na Váš repozitář do Teams
